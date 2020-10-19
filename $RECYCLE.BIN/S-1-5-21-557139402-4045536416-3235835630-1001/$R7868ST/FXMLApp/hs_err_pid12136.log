@@ -1,0 +1,195 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 8388608 bytes for Failed to commit area from 0x0000000081400000 to 0x0000000081c00000 of length 8388608.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (t:/workspace/open/src/hotspot/os/windows/os_windows.cpp:3271), pid=12136, tid=33928
+#
+# JRE version:  (11.0.6+8) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (11.0.6+8-LTS, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dapplication.home=C:\Program Files\Java\jdk-11.0.6 --add-modules=ALL-DEFAULT -Xms8m -Djdk.module.main=jdk.compiler jdk.compiler/com.sun.tools.javac.Main -d C:\Users\PC\Documents\NetBeansProjects\FXMLApp\build\classes -classpath C:\Users\PC\Documents\NetBeansProjects\FXMLApp\build\classes;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.base.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.controls.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.fxml.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.graphics.jar;C:\Program Files\NetBeans-11.1\netbeans\ide\modules\ext\postgresql-42.2.5.jar -sourcepath C:\Users\PC\Documents\NetBeansProjects\FXMLApp\src -target 11 -encoding UTF-8 -g -processorpath C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.base.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.controls.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.fxml.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.graphics.jar;C:\Program Files\NetBeans-11.1\netbeans\ide\modules\ext\postgresql-42.2.5.jar;C:\Users\PC\Documents\NetBeansProjects\FXMLApp\build\empty -s C:\Users\PC\Documents\NetBeansProjects\FXMLApp\build\generated-sources\ap-source-output -source 11 --module-path C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.base.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.controls.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.fxml.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.graphics.jar C:\Users\PC\Documents\NetBeansProjects\FXMLApp\src\fxmlapp\FXMLApp.java
+
+Host: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz, 8 cores, 7G,  Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+Time: Tue Apr 14 10:27:53 2020 C????I?E - C?E???E C????? elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001ebc19cb800):  JavaThread "Unknown thread" [_thread_in_vm, id=33928, stack(0x000000d298f00000,0x000000d299000000)]
+
+Stack: [0x000000d298f00000,0x000000d299000000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x63679a]
+V  [jvm.dll+0x7755bf]
+V  [jvm.dll+0x776c65]
+V  [jvm.dll+0x7772d3]
+V  [jvm.dll+0x25e7f8]
+V  [jvm.dll+0x633c4a]
+V  [jvm.dll+0x628625]
+V  [jvm.dll+0x314a7c]
+V  [jvm.dll+0x314902]
+V  [jvm.dll+0x31a176]
+V  [jvm.dll+0x36650f]
+V  [jvm.dll+0x365f30]
+V  [jvm.dll+0x2f1a78]
+V  [jvm.dll+0x2f2bf6]
+V  [jvm.dll+0x74e707]
+V  [jvm.dll+0x74fe7f]
+V  [jvm.dll+0x373349]
+V  [jvm.dll+0x734e5e]
+V  [jvm.dll+0x3e2b5d]
+V  [jvm.dll+0x3e4ef1]
+C  [jli.dll+0x51bf]
+C  [jli.dll+0x16f34]
+C  [KERNEL32.DLL+0x17bd4]
+C  [ntdll.dll+0x6ced1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001ebbf756a80, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000001ebc19e1800 GCTaskThread "GC Thread#0" [stack: 0x000000d299000000,0x000000d299100000] [id=11868]
+  0x000001ebc1a12800 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000d299100000,0x000000d299200000] [id=11040]
+  0x000001ebc1a16000 ConcurrentGCThread "G1 Conc#0" [stack: 0x000000d299200000,0x000000d299300000] [id=33532]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffaf23e0207]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001ebc19ca720] Heap_lock - owner thread: 0x000001ebc19cb800
+
+Heap address: 0x0000000081400000, size: 2028 MB, Compressed Oops mode: Non-zero based: 0x0000000081400000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff78a200000 - 0x00007ff78a208000 	C:\Program Files\Java\jdk-11.0.6\bin\javac.exe
+0x00007ffb35100000 - 0x00007ffb352f0000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffb34410000 - 0x00007ffb344c2000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffb32d60000 - 0x00007ffb33003000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffb324c0000 - 0x00007ffb325ba000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffb26bf0000 - 0x00007ffb26c06000 	C:\Program Files\Java\jdk-11.0.6\bin\VCRUNTIME140.dll
+0x00007ffb1f950000 - 0x00007ffb1f98f000 	C:\Program Files\Java\jdk-11.0.6\bin\jli.dll
+0x00007ffb344d0000 - 0x00007ffb34573000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffb34f90000 - 0x00007ffb3502e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffb34160000 - 0x00007ffb341f7000 	C:\Windows\System32\sechost.dll
+0x00007ffb34040000 - 0x00007ffb34160000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffb34de0000 - 0x00007ffb34f74000 	C:\Windows\System32\USER32.dll
+0x00007ffb1b280000 - 0x00007ffb1b505000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.720_none_e6beb5c51314836b\COMCTL32.dll
+0x00007ffb32490000 - 0x00007ffb324b1000 	C:\Windows\System32\win32u.dll
+0x00007ffb33490000 - 0x00007ffb337c6000 	C:\Windows\System32\combase.dll
+0x00007ffb34650000 - 0x00007ffb34676000 	C:\Windows\System32\GDI32.dll
+0x00007ffb33010000 - 0x00007ffb331a4000 	C:\Windows\System32\gdi32full.dll
+0x00007ffb322c0000 - 0x00007ffb32340000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffb321c0000 - 0x00007ffb3225e000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffb2c0d0000 - 0x00007ffb2c0da000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffb35030000 - 0x00007ffb3505e000 	C:\Windows\System32\IMM32.DLL
+0x00007ffb04240000 - 0x00007ffb042ea000 	C:\Program Files\Java\jdk-11.0.6\bin\msvcp140.dll
+0x00007ffaf20e0000 - 0x00007ffaf2c09000 	C:\Program Files\Java\jdk-11.0.6\bin\server\jvm.dll
+0x00007ffb34f80000 - 0x00007ffb34f88000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffb1c460000 - 0x00007ffb1c469000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffb34d70000 - 0x00007ffb34ddf000 	C:\Windows\System32\WS2_32.dll
+0x00007ffb2f520000 - 0x00007ffb2f544000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffb2eb60000 - 0x00007ffb2eb8d000 	C:\Windows\SYSTEM32\winmmbase.dll
+0x00007ffb320c0000 - 0x00007ffb3210a000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ffb32020000 - 0x00007ffb32031000 	C:\Windows\System32\kernel.appcore.dll
+0x00007ffb269c0000 - 0x00007ffb269d1000 	C:\Program Files\Java\jdk-11.0.6\bin\verify.dll
+0x00007ffb30900000 - 0x00007ffb30af4000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffb1ff10000 - 0x00007ffb1ff3a000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffb1e1b0000 - 0x00007ffb1e1d9000 	C:\Program Files\Java\jdk-11.0.6\bin\java.dll
+0x00007ffb26890000 - 0x00007ffb268a6000 	C:\Program Files\Java\jdk-11.0.6\bin\zip.dll
+0x00007ffb2c330000 - 0x00007ffb2c33a000 	C:\Program Files\Java\jdk-11.0.6\bin\jimage.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-11.0.6\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.720_none_e6beb5c51314836b;C:\Program Files\Java\jdk-11.0.6\bin\server
+
+VM Arguments:
+jvm_args: -Dapplication.home=C:\Program Files\Java\jdk-11.0.6 --add-modules=ALL-DEFAULT -Xms8m -Djdk.module.main=jdk.compiler 
+java_command: jdk.compiler/com.sun.tools.javac.Main -d C:\Users\PC\Documents\NetBeansProjects\FXMLApp\build\classes -classpath C:\Users\PC\Documents\NetBeansProjects\FXMLApp\build\classes;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.base.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.controls.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.fxml.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.graphics.jar;C:\Program Files\NetBeans-11.1\netbeans\ide\modules\ext\postgresql-42.2.5.jar -sourcepath C:\Users\PC\Documents\NetBeansProjects\FXMLApp\src -target 11 -encoding UTF-8 -g -processorpath C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.base.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.controls.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.fxml.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.graphics.jar;C:\Program Files\NetBeans-11.1\netbeans\ide\modules\ext\postgresql-42.2.5.jar;C:\Users\PC\Documents\NetBeansProjects\FXMLApp\build\empty -s C:\Users\PC\Documents\NetBeansProjects\FXMLApp\build\generated-sources\ap-source-output -source 11 --module-path C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.base.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.controls.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.fxml.jar;C:\Users\PC\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib\javafx.graphics.jar C:\Users\PC\Documents\NetBeansProjects\FXMLApp\sr
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 8388608                                   {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2126512128                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5836300                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122910970                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122910970                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Users\PC\AppData\Roaming\npm;C:\Users\PC\AppData\Local\Yarn\bin
+USERNAME=PC
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, system-wide physical 8107M (1205M free)
+TotalPageFile size 32683M (AvailPageFile size 10M)
+current process WorkingSet (physical memory assigned to process): 9M, peak: 9M
+current process commit charge ("private bytes"): 60M, peak: 68M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (11.0.6+8-LTS) for windows-amd64 JRE (11.0.6+8-LTS), built on Dec 11 2019 09:17:57 by "mach5one" with MS VC++ 15.5 (VS2017)
+
+END.
